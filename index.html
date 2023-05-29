@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+<title>Dubrovnik</title>
+
+<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+  
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css'>
+  
+<link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-1.7.2.js"></script>
+    <script src="js/audioaligner.js"></script>
+
+ 
+</head>
+
+<body translate="no">
+  <div class="container">
+  <h1>Dubrovnik</h1>
+  <div class="row">
+    <div class="twelve columns">
+      <div class="featured"></div>
+      <div class="teaser">
+      <h3>Read aloud with text aligner</h3>
+        <h6><span>Walk through Centuries</span></h6>
+
+			<audio id="player" controls ></audio>
+
+
+				<div id="target">
+<p>When entering the Adriatic Sea, Dubrovnik is the first island-protected port on the maritime route going from east to west, with quick access to the hinterland by way of the Neretva Valley. Latest archaeological research has shown that a settlement dating to the 6th century or probably even earlier existed under todays city. It expanded with the arrival of the Croats in the 7th century, following the abandonment of ancient Epidaurus (todays Cavtat).</p><p><br />The intensification of traffic between the East and West both during and after the Crusades resulted in the development of maritime and mercantile centers throughout the Mediterranean and the Adriatic Sea in the 12th and 13th centuries. Dubrovnik was one of them. The Zadar Treaty in 1358 liberated Dubrovnik from Venetian rule, and it was crucial to the successful furthering of its development. The remaining Dalmatian towns failed to achieve this, so that they definitely fell under Venetian rule in the year 1420. Already during the 14th and 15th centuries, Dubrovnik was the most significant maritime and mercantile center of the Adriatic, alongside Venice and Ancona. Dubrovnik expanded its territory by using contracts and by purchasing land from Klek in the north to Sutorina at the entrance to the Bay of Kotor, including the islands of Mljet, Lastovo, Elaphite and Lokrum.<br /><br />The legal status of the Dubrovnik Republic was completely achieved by the 15th century. This meant the independent election of a rector and councilors, the minting of currency, a state flag with an image of St. Blaise, independent legislature, and the right to establish consulates abroad. According to the aristocratic constitution, the state authority was based on the Great Council, which was made up of Dubrovnik aristocratic families. They, in turn, appointed the members of the Senate and the Small Council, which was the executive body of the Great Council. The Rector was appointed on a monthly basis as a nominal symbol of authority.<p/>
+
+					
+				</div>
+
+      </div>
+    </div>
+
+</div>
+  
+<script>
+
+// check for MP3
+
+var audio = document.getElementById('player');
+
+if (!(audio.canPlayType && (audio.canPlayType('audio/mp3') || audio.canPlayType('audio/mpeg')) )) {
+	alert('Please use a browser that can play MP3s like Chrome, Safari, IE9');
+}
+
+// create aligner
+var aligner = new AudioAligner(document.getElementById('target'), audio); 
+
+// load and align
+aligner.align('audio/dubrovnik.mp3', 'json/dubrovnik.json');
+
+</script>
+  
+  
+</body>
+
+</html>

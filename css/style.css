@@ -1,0 +1,121 @@
+body {
+  background: #282931;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Varela Round', sans-serif;
+  height: 100%;
+}
+
+h1 {
+  line-height: 72px;
+  margin: 24px 0;
+  color:white;
+}
+
+h3{
+   color: #fc3565;
+  line-height: 24px;
+    margin: 24px 0;
+}
+
+h6{
+  line-height:24px;
+}
+
+h6 span{
+  font-size: 26px;
+  color:white;
+  line-height:26px;
+}
+
+
+p {
+  font-size: 26px;
+  line-height: 26px;
+  margin: 26px 0;
+  color:#D3D3D3;
+}
+
+a {
+  color: #bbbbc4;
+  text-decoration: none;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor:pointer;
+  border-bottom:1px groove #fc3565;
+}
+
+a:hover {
+  color: #fc3565;
+}
+
+.columns{
+  background:rgba(47, 48, 58, 0.38);
+}
+
+.columns:hover {
+    background: #2e2f35;
+}
+
+.teaser{
+  padding:10px;
+}
+.featured{
+    background: url(https://tzdubrovnik.hr/lang/en/imgs/47167/6/1272712450fotol290_6.jpg);
+    background-repeat: no-repeat;
+    background-position: -32px -202px;
+    height: 250px;
+    background-
+}
+
+.iTwo{
+      background: url(https://images.unsplash.com/photo-1472437774355-71ab6752b434?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1125&q=80&cs=tinysrgb);
+}
+
+.iThree{
+  background:url('https://images.unsplash.com/photo-1445888985293-8e1b904061c4?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');}
+
+.iFour{
+  background:url('https://images.unsplash.com/photo-1472825013745-b34ee3e9d09b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+}
+
+.iFive{
+  background:url('https://images.unsplash.com/photo-1466786784937-3e682c802b14?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1875&q=80&cs=tinysrgb');
+}
+
+.iSix{
+  background:url('https://images.unsplash.com/photo-1458791682441-c0fae0292e70?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1016&q=80&cs=tinysrgb');
+}
+
+.iSeven{
+  background:url('https://images.unsplash.com/photo-1476097257289-262c96e8a0f8?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb');
+}
+
+.img{
+    background-repeat: no-repeat;
+    height: 250px;
+    background-size: cover;
+}
+
+.row{
+  margin-bottom:1.5rem;
+}
+
+		.word-data {
+			-x-background: #ffffee;
+                        border-radius: 5px;
+		}
+		.current-word {
+			background: #000080;
+			outline: 0px;
+		}
+		.aligned-word:hover {
+			cursor: pointer;
+			background: #FEFFDC;
+		}
+		.player {
+			width: 50%;
+			
+		}
